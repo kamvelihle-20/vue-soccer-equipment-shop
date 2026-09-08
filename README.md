@@ -1,10 +1,10 @@
-# ⚽ Football Equipment Shop
+#  Football Equipment Shop
 
 A responsive football equipment e-commerce website built with Vue.js.
 
 The website allows users to explore football equipment, view product details, browse a gallery, and learn about the services offered by the shop.
 
-## 🚀 Features
+##  Features
 
 - Responsive navigation
 - Home page
@@ -17,7 +17,7 @@ The website allows users to explore football equipment, view product details, br
 - Vue Router navigation
 - Backend API integration
 
-## 🛠️ Technologies
+##  Technologies
 
 - Vue.js
 - JavaScript
@@ -27,13 +27,13 @@ The website allows users to explore football equipment, view product details, br
 - Node.js
 - Express.js
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 backend/    # Express.js backend
 client/     # Vue.js frontend
 
-💻Running the Project
+Running the Project
 
 Frontend
 cd client
@@ -45,10 +45,10 @@ cd backend
 npm install
 node index.js
 
-🎓 Academic Project
+ Academic Project
 
 Developed as part of my Multimedia Design / Web Development studies.
 
-👨‍💻 Author
+ Author
 
 Kamvelihle Mqadi
