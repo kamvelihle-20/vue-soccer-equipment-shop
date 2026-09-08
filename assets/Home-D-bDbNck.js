@@ -1,1 +1,0 @@
-import{_ as t,c as r,o as n,a as o,F as a}from"./index-DnzGnx9e.js";const l={};function s(m,e){return n(),r(a,null,[e[0]||(e[0]=o("h1",null,"Home",-1)),e[1]||(e[1]=o("p",null,"Welcome to my Footbal equipment store.Get yourself quality equipment for yourself, team or your youth academy.",-1))],64)}const f=t(l,[["render",s]]);export{f as default};
