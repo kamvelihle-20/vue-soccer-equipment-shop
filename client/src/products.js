@@ -1,0 +1,38 @@
+export const products = [
+  {
+    id: 1,
+    name: 'Football Jersey',
+    price: 50,
+    image: '/vue-soccer-equipment-shop/images/barca.jpg'
+  },
+  {
+    id: 2,
+    name: 'Soccer Ball',
+    price: 30,
+    image: '/vue-soccer-equipment-shop/images/ball.jpg'
+  },
+  {
+    id: 3,
+    name: 'Goalkeeper Gloves',
+    price: 25,
+    image: '/vue-soccer-equipment-shop/images/gloves.jpg'
+  },
+  {
+    id: 4,
+    name: 'Shin Guards',
+    price: 15,
+    image: '/vue-soccer-equipment-shop/images/shinguards.jpg'
+  },
+  {
+    id: 5,
+    name: 'Football Boots',
+    price: 80,
+    image: '/vue-soccer-equipment-shop/images/boots.jpg'
+  },
+  {
+    id: 6,
+    name: 'Training Cones',
+    price: 10,
+    image: '/vue-soccer-equipment-shop/images/cones.jpg'
+  }
+];

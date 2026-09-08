@@ -1,46 +1,70 @@
 <template>
   <div>
-    <button class="btn btn-secondary mb-3" @click="$router.back()">Back</button>
+    <button class="btn btn-secondary mb-3" @click="$router.back()">
+      Back
+    </button>
 
-    <div v-if="loading" class="text-center my-5">
-      <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
+    <div v-if="product" class="card">
+      <img
+        :src="product.image"
+        class="card-img-top"
+        :alt="product.name"
+      />
+
+      <div class="card-body">
+        <h3 class="card-title">{{ product.name }}</h3>
+
+        <p class="card-text">
+          Price: ${{ product.price }}
+        </p>
+
+        <p class="card-text">
+          Product ID: {{ product.id }}
+        </p>
+
+        <button class="btn btn-success" @click="addToCart">
+          Add to Cart
+        </button>
+
+        <p v-if="added" class="text-success mt-2">
+          ✓ Added to cart!
+        </p>
       </div>
     </div>
 
-    <div v-if="error" class="alert alert-danger">{{ error }}</div>
-
-    <div v-if="product" class="card">
-      <img src="https://via.placeholder.com/600x400" class="card-img-top" :alt="product.name" />
-      <div class="card-body">
-        <h3 class="card-title">{{ product.name }}</h3>
-        <p class="card-text">Price: ${{ product.price }}</p>
-        <p class="card-text">ID: {{ product.id }}</p>
-      </div>
+    <div v-else class="alert alert-danger">
+      Product not found.
     </div>
   </div>
 </template>
 
 <script>
-import axios from 'axios';
+import { products } from '../products';
 
 export default {
   data() {
     return {
       product: null,
-      loading: true,
-      error: null
+      added: false
     };
   },
+
   mounted() {
-    const id = this.$route.params.id;
-    axios.get(`http://localhost:5000/api/products/${id}`)
-      .then(res => { this.product = res.data; })
-      .catch(err => {
-        this.error = 'Failed to load product.';
-        console.error(err);
-      })
-      .finally(() => { this.loading = false; });
+    const id = Number(this.$route.params.id);
+
+    this.product = products.find(product => product.id === id);
+  },
+
+  methods: {
+    addToCart() {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+      cart.push(this.product);
+
+      localStorage.setItem('cart', JSON.stringify(cart));
+
+      this.added = true;
+    }
   }
 };
 </script>
