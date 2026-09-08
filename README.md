@@ -1,5 +1,54 @@
-# Vue 3 + Vite
+# ⚽ Football Equipment Shop
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A responsive football equipment e-commerce website built with Vue.js.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+The website allows users to explore football equipment, view product details, browse a gallery, and learn about the services offered by the shop.
+
+## 🚀 Features
+
+- Responsive navigation
+- Home page
+- Product catalogue
+- Individual product details
+- Services page
+- Football equipment gallery
+- About page
+- Responsive design
+- Vue Router navigation
+- Backend API integration
+
+## 🛠️ Technologies
+
+- Vue.js
+- JavaScript
+- HTML5
+- CSS3
+- Vite
+- Node.js
+- Express.js
+
+## 📁 Project Structure
+
+```text
+backend/    # Express.js backend
+client/     # Vue.js frontend
+
+💻Running the Project
+
+Frontend
+cd client
+npm install
+npm run dev
+
+Backend
+cd backend
+npm install
+node index.js
+
+🎓 Academic Project
+
+Developed as part of my Multimedia Design / Web Development studies.
+
+👨‍💻 Author
+
+Kamvelihle Mqadi
